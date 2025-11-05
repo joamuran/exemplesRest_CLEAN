@@ -251,7 +251,7 @@ Veiem en detall, i basant-nos en el codi aquest funcionament:
 
     Abans de veure el codi del controlador d'usuaris, anem a veure una miqueta més a fons la injecció de dependències.
 
-    > [! NOTE] **Sobre la Injeccció de dependències**
+    > [!NOTE] **Sobre la Injeccció de dependències**
     >
     > La *injecció de dependències* és una tècnica que ens permet separar les classes de la responsabilitat de construir o buscar els objectes que necessiten per funcionar.
     >
@@ -333,7 +333,7 @@ Veiem en detall, i basant-nos en el codi aquest funcionament:
 
     Com veiem, aci només agafem la informació de la petició, i *executem* el cas d'ús corresponent.
    
-    > [! NOTE ] **Sobre `this`, `bind` i Funcions Fletxa**
+    > [!NOTE] **Sobre `this`, `bind` i Funcions Fletxa**
     >     
     > Cal tindre en compte que quan usem *Express*, els controladors es passen com a callbacks. Per tant, si escrivim:
     >

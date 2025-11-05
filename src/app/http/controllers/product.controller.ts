@@ -3,6 +3,10 @@ import { CreateProductUseCase } from "../../domain/usecases/products/CreateProdu
 import { GetProductByIdUseCase } from "../../domain/usecases/products/GetProductByIdUseCase";
 import { GetProductsUseCase } from "../../domain/usecases/products/GetProductsUseCase";
 
+// Controlador dels productes: S'encarrega de rebre les peticions, proporcionar-li
+// als diferents casos d'ús la informació que necessiten per executar-se, i a partir 
+// de la resposta dels casos d'us, "presentar" la resposta per a l'usuari o aplicació client.
+
 export class ProductController {
     constructor(
         private createProduct: CreateProductUseCase,      // Les funcions del controlador seran els casos d'ús

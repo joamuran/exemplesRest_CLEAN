@@ -4,14 +4,11 @@
 // l'aplicació, per això s'introdueix aquest capa de casos d'us (que seria pràcticament una 
 // traducció literal del diagrama de casos d'ús de l'aplicació!)
 
-  /*// Quan trobem Omit<T, k>
-  // El que fa és, a partir de ltipus T, elimina les propietats indicades en K
-  async execute(data: Omit<User, "id">): Promise<User> {   // Agafa un usuari, li lleva l'ID, i retorna una promesa amb l'usuari
-    const user: User = { ...data };
-    return this.userRepo.create(user);
-  }
-}
-*/
+// Implementació del cas d'Us per crear un usuari.
+// Quan es crea (al constructor), rep un repositori que implementa una interfície IUserRepository.
+// La implementació concreta del repositori la farà altra classe, i ja ens ve "injectada" en el consturtor.
+// Com a cas d'ús, només necessitarem fer ús dels mètodes que ens proporciona aquesta interfície, 
+// sense preocupar-nos de com estiga implementada.
 
 import { IUserRepository } from "../../repositories/IUserRepository";
 
